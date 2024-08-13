@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Hero Banner Section -->
+    <header class="bg-white text-black border-b border-neutral-500">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4">
+        <div class="font-bold text-2xl">STRATLAB</div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-gray-300">Service</a>
+          <a href="#" class="hover:text-gray-300">Why us</a>
+          <a href="#" class="hover:text-gray-300">Testimonial</a>
+          <a href="#" class="hover:text-gray-300">FAQ</a>
+          <a href="#" class="hover:text-gray-300">About</a>
+        </nav>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="bg-white text-black px-6 py-3 rounded-full border border-neutral-500 font-semibold">Login</a>
+          <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold">Signup</a>
+        </div>
+        <button class="md:hidden text-black focus:outline-none" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden bg-white">
+        <nav class="flex flex-col space-y-4 py-4 px-6">
+          <a href="#" class="hover:text-gray-300">Service</a>
+          <a href="#" class="hover:text-gray-300">Why us</a>
+          <a href="#" class="hover:text-gray-300">Testimonial</a>
+          <a href="#" class="hover:text-gray-300">FAQ</a>
+          <a href="#" class="hover:text-gray-300">About</a>
+        </nav>
+        <div class="flex flex-col space-y-4 py-4 px-6">
+          <a href="#" class="bg-white text-black px-6 py-3 rounded-full border border-neutral-500 font-semibold">Login</a>
+          <a href="#" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold">Signup</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- The Marketing Toolkit -->
+    <section class="py-8 px-4 bg-white">
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="text-center md:text-left md:w-1/2">
+          <p>The Marketing Toolkit</p>
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">
+            Mastering Proven Strategies That Drive Real Results
+          </h1>
+          <p class="mb-8">
+            Unleash the power of strategic marketing with our comprehensive course, designed to empower you with the skills and knowledge necessary to navigate the dynamic landscape of modern business.
+          </p>
+          <a href="#" class="bg-green-800 text-white px-6 py-3 rounded-full font-semibold">Enroll now ></a>
+          <ul class="mt-8 space-y-2">
+            <li><i class="fa-solid fa-circle-check"></i> Money back guarantee</li>
+            <li><i class="fa-solid fa-circle-check"></i> Scalable growth tools</li>
+            <li><i class="fa-solid fa-circle-check"></i> Access to members-only community</li>
+          </ul>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <img src="book-image.webp" alt="The Marketing Toolkit" class="mx-auto w-full max-w-sm" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-8 px-4 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-xl font-bold mb-4">What they say about us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-gray-800 mb-4">This course changed my whole concept regarding landing pages.</p>
+            <p class="text-gray-600 text-sm">Young Alaska, London</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-gray-800 mb-4">I learned so much about effective marketing strategies.</p>
+            <p class="text-gray-600 text-sm">Alex Johnson, New York</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <p class="text-gray-800 mb-4">Highly recommend for anyone serious about marketing!</p>
+            <p class="text-gray-600 text-sm">Maria Lopez, San Francisco</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured In Section -->
+    <section class="bg-green-800 text-white py-8">
+      <div class="container mx-auto">
+        <p class="text-4xl text-center font-bold mb-4">Featured in:</p>
+        <ul class="flex flex-wrap justify-center space-x-4">
+          <li class="text-center">Zapier</li>
+          <li class="text-center">Ebay</li>
+          <li class="text-center">Okra</li>
+          <li class="text-center">Stripe</li>
+          <li class="text-center">Google</li>
+          <li class="text-center">Docusign</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About this Course Section -->
+    <section class="bg-white py-8">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <img src="marketing.webp" alt="Product Image" class="rounded-lg w-full" />
+        </div>
+        <div>
+          <p>About this course</p>
+          <h2 class="text-3xl font-bold mb-4">Journey into Marketing Mastery: Unveiling The Marketing Toolkit</h2>
+          <p class="mb-8">
+            Welcome to The Marketing Toolkit, your comprehensive guide to mastering modern marketing strategies.
+          </p>
+          <a href="#" class="bg-green-800 text-white px-6 py-3 rounded-full font-semibold">Enroll now ></a>
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Premium Resources</h3>
+              <p class="text-sm mb-2">Gain exclusive access to a treasure trove of premium resources handpicked by industry experts.</p>
+              <a href="#" class="text-green-800">Download Resources</a>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg">
+              <h3 class="font-bold mb-2">Training Materials Included</h3>
+              <p class="text-sm mb-2">Enjoy comprehensive learning with all-inclusive training materials provided.</p>
+              <a href="#" class="text-green-800">Download Materials</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Outline Section -->
+    <section class="bg-white py-8">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">Navigating The Marketing Landscape: Your Roadmap to Success</h2>
+        <div class="space-y-4">
+          <div class="bg-green-900 text-white p-6 rounded-lg">
+            <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleContent('content1')">
+              <div class="flex items-center space-x-4">
+                <span class="text-xl font-bold">01</span>
+                <span class="font-semibold">Fundamentals of Marketing</span>
+              </div>
+              <svg id="icon1" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform rotate-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="content1" class="hidden mt-4">
+              <p>
+                Delve into the core principles of marketing, understanding the foundations that drive successful campaigns.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-green-900 text-white p-6 rounded-lg">
+            <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleContent('content2')">
+              <div class="flex items-center space-x-4">
+                <span class="text-xl font-bold">02</span>
+                <span class="font-semibold">Market Research and Analysis</span>
+              </div>
+              <svg id="icon2" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform rotate-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="content2" class="hidden mt-4">
+              <p>
+                Gain insights into market dynamics, learn how to conduct thorough market research and analyze key data.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-green-900 text-white p-6 rounded-lg">
+            <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleContent('content3')">
+              <div class="flex items-center space-x-4">
+                <span class="text-xl font-bold">03</span>
+                <span class="font-semibold">Digital Marketing Strategies</span>
+              </div>
+              <svg id="icon3" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform rotate-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="content3" class="hidden mt-4">
+              <p>
+                Explore cutting-edge digital marketing techniques, from SEO to social media marketing and beyond.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-green-900 text-white p-6 rounded-lg">
+            <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleContent('content4')">
+              <div class="flex items-center space-x-4">
+                <span class="text-xl font-bold">04</span>
+                <span class="font-semibold">Branding and Positioning</span>
+              </div>
+              <svg id="icon4" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform rotate-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="content4" class="hidden mt-4">
+              <p>
+                Understand the art of branding, positioning your business to stand out in a crowded marketplace.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-green-900 text-white p-6 rounded-lg">
+            <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleContent('content5')">
+              <div class="flex items-center space-x-4">
+                <span class="text-xl font-bold">05</span>
+                <span class="font-semibold">Marketing Automation</span>
+              </div>
+              <svg id="icon5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform rotate-0 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="content5" class="hidden mt-4">
+              <p>
+                Harness the power of automation tools to streamline your marketing efforts and maximize efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section class="py-8 px-4 bg-white">
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="text-center md:text-left md:w-1/2">
+          <p>What You'll Learn</p>
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">
+            Empower Your Skills: Unveiling the Proficinecies You'll Master
+          </h1>
+          <p class="mb-8">
+            By the end of this course, you'll be able to.
+          </p>
+          <ul class="mt-8 space-y-2">
+            <li><i class="fa-solid fa-circle-check"></i> Develop a comprehensive marketing strategy</li>
+            <li><i class="fa-solid fa-circle-check"></i> Utilize various digital marketing channels effectively</li>
+            <li><i class="fa-solid fa-circle-check"></i> Analyze and interpret marketing data for informed decisions</li>
+            <li><i class="fa-solid fa-circle-check"></i> Optimize campaigns for maximum impact</li>
+            <li><i class="fa-solid fa-circle-check"></i> Implement advanced marketing tactics to stay ahead</li>
+          </ul>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <img src="book-image.webp" alt="The Marketing Toolkit" class="mx-auto w-full max-w-sm" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Read to supercharge your marketing skills? -->
+    <section class="bg-green-800 text-white py-16 px-10">
+      <div class="container py-16 px-4  mx-auto grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-5xl font-bold mb-4">
+            Read to supercharge
+          </h2>
+          <h2 class="text-5xl font-bold mb-4">your marketing skills?</h2>  
+        </div>
+        <div>
+          <p class="mb-8">Our open, positive and proactive approach helps us find ways to align your work.</p>
+          <a href="#" class="bg-white text-green-800 px-6 py-3 rounded-full font-semibold">Get started now ></a>
+        </div>
+      </div>
+    </section>   
+    
+
+    <!-- Pricing -->
+    <section class="py-8 px-4 bg-white">
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="text-center md:text-left md:w-1/2">
+          <p>Pricing</p>
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">
+            Choose the pricing that works best for you 
+          </h1>
+        </div>
+      </div>
+      <div class="container mx-auto  mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gray-100 p-4 rounded-lg space-y-4">
+          <h3 class="font-bold mb-2">Monthly Subscription</h3>
+          <p class="text-sm mb-2">Fuel your product workflow with more advanced research features</p>
+          <p><span class="text-2xl font-bold">$49 </span><span> / Month</span></p>
+          <p><a href="#" class="bg-green-800 text-white px-6 py-3 rounded-full font-semibold">Enroll now ></a></p>
+          <div>
+            <ul  class="space-y-2">
+              <li>Money back guarantee</li>
+              <li>Satisfaction Guaranteed</li>
+              <li>Or get your money back within 30 days</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-lg space-y-4">
+          <h3 class="font-bold mb-2">One-Time Payment</h3>
+          <p class="text-sm mb-2">Scale product research and learning across your company</p>
+          <p><span class="text-2xl font-bold">$299 </span><span> (Save 20%) </span></p>
+          <p><a href="#" class="bg-green-800 text-white px-6 py-3 rounded-full font-semibold">Enroll now ></a></p>
+          <div>
+            <ul class="space-y-2">
+              <li><strong>Everything in Basic, and</strong></li>
+              <li>Scalable growth tools</li>
+              <li>Access to members-only community</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Read to supercharge your marketing skills? -->
+    <section class="bg-white py-16 px-10">
+      <div class="container py-16 px-4  mx-auto grid md:grid-cols-2 gap-10">
+        <div>
+          <p>Testimonial</p>
+          <h2 class="text-5xl font-bold mb-4">
+            What they say about us
+          </h2>
+        </div>
+        <div>
+          <p class="mb-8">Our open, postive, and practive approach helps us find ways to align your work environment with the culture and attitude you and your team aspire.</p>
+        </div>
+      </div>
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <p class="text-gray-800 mb-4">This course changed my whole concept regarding Landing Pages.</p>
+          <p class="text-gray-600 text-sm">Young Alaska, London</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <p class="text-gray-800 mb-4">This course is amazing I didn't expect this so much of greath information! Our open, positive, and proactive approach helps us find ways to align your work environment with the culture and attitude you and your team aspire.</p>
+          <p class="text-gray-600 text-sm">Alex Johnson, New York</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <p class="text-gray-800 mb-4">So many insights, new information, ways to align your work environment. loved the tips about landing page.</p>
+          <p class="text-gray-600 text-sm">Maria Lopez, San Francisco</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <p class="text-gray-800 mb-4">This course is amazing I didn't expect this so much of great information! Our open, postive and practive approach helps us find ways to align your work environment</p>
+          <p class="text-gray-600 text-sm">Young Alaska, London</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <p class="text-gray-800 mb-4">This course is amazing I didn't expect this so much of great information!.</p>
+          <p class="text-gray-600 text-sm">Alex Johnson, New York</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <p class="text-gray-800 mb-4">This course is amazing I didn't expect this so much of great information!.</p>
+          <p class="text-gray-600 text-sm">Maria Lopez, San Francisco</p>
+        </div>
+      </div>
+
+    </section>  
+
+
+    <!-- Master strategies -->
+    <section class="py-8 px-4 bg-green-800 text-white">
+      <div class="container mx-auto flex flex-col md:flex-row items-center ">
+        <div class="text-center md:text-left md:w-1/2">
+          <h1 class="text-5xl md:text-5xl font-bold mb-4">Mastering Proven</h1>
+          <h1 class="text-5xl md:text-5xl font-bold mb-4">Strategies That drive</h1>
+          <h1 class="text-5xl md:text-5xl font-bold mb-4">Real Results</h1>          
+          
+          <p class="mb-8">
+            Unleash the power of strategic marketing with our comprehensive course, designed to empower you with the skills and knowledge necessary to navigate the dynamic landscape of modern business.
+          </p>
+          <p><a href="#" class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold">Enroll now ></a></p>
+          <ul class="flex mt-8">
+            <li><i class="fa-solid fa-circle-check"></i> Money back guarantee</li>
+            <li><i class="fa-solid fa-circle-check"></i> Scalable growth tools</li>
+            <li><i class="fa-solid fa-circle-check"></i> Access to members-only community</li>
+          </ul>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0">
+          <img src="book-image.webp" alt="The Marketing Toolkit" class="mx-auto w-full max-w-sm" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-green-900 text-white py-8">
+      <div class="container mx-auto grid md:grid-cols-2 justify-between items-center space-y-4 md:space-y-0 space-x-10 md:space-x-0">
+        <div class="py-5">
+          <div class=""></div>
+          <p class="w-96">We make onboarding new employees ridiculously easy. On day one, they're ready to go. Anad retaining them is easier.</p>
+          <div class="py-8">
+            <span>Follow us on:</span>
+            <a href="#" class="px-2">LinkedIn</a>
+            <a href="#" class="px-2">Instagram</a>
+            <a href="#" class="px-2">Youtube</a>
+            <a href="#" class="px-2">Facebook</a>
+          </div>
+        </div>
+
+        <div class="container grid grid-cols-3">
+          <div>
+            <ul class="space-y-4">
+              <li ><a href="#" class="">Home</a></li>
+              <li ><a href="#" class="">Why Us</a></li>
+              <li><a href="#" class="">Deals</a></li>
+            </ul>          
+          </div>
+          <div>
+            <ul  class="space-y-4">
+              <li><a href="#" class="">Service</a></li>
+              <li ><a href="#" class="">Case Studies</a></li>
+              <li ><a href="#" class="">Plan</a></li>
+            </ul>          
+          </div>
+          <div>
+            <ul class="space-y-4">
+              <li ><a href="#" class="">Testimonial</a></li>
+              <li ><a href="#" class="">About</a></li>
+              <li ><a href="#" class="">FAQ</a></li>
+            </ul>          
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu and collapsible sections -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+      }
+
+      function toggleContent(contentId) {
+        const content = document.getElementById(contentId);
+        const icon = document.getElementById('icon' + contentId.slice(-1));
+
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      }
+    </script>
+  </body>
+</html>
